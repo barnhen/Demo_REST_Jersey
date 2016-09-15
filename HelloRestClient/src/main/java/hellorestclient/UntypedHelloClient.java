@@ -9,7 +9,7 @@ public class UntypedHelloClient {
  // Create a new RESTeasy client through the JAX-RS API:
  Client client = ClientBuilder.newClient();
  // The base URL of the service:
- WebTarget target = client.target("http://localhost:8088/TestRest/rest");
+  WebTarget target = client.target("http://localhost:8082/TestRest/rest");
  // Building the relative URL manually for the sayHello method:
  WebTarget hello =
  target.path("hello").path("sayHello").queryParam("name", "me");

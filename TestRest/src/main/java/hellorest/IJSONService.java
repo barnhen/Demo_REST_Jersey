@@ -13,13 +13,13 @@ import model.Product;
 
 @Path("/json/product")
 public interface IJSONService {
-	@GET
-	@Path("/get")
-	@Produces("application/json")
-	public List<Product> getProductInJSON();
+    @GET
+    @Path("/get")
+    @Produces("application/json")
+    public List<Product> getProductInJSON();
 
-	@POST
-	@Path("/post")
-	@Consumes("application/json")
-	public Response createProductInJSON(Product product);
+    @POST
+    @Path("/post")
+    @Consumes("application/json")
+    public Response createProductInJSON(Product product);
 }
